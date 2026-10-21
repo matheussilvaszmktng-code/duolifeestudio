@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { MapPin, MessageCircle, Activity, HeartPulse, ChevronDown } from "lucide-react";
+import { MapPin, Activity, HeartPulse, ChevronDown } from "lucide-react";
 import { Header, Footer, WhatsButton } from "@/components/site/Shell";
 import { ADDRESS, MAPS_URL } from "@/lib/site";
 import equipe from "@/assets/equipe.jpg.asset.json";
@@ -240,7 +240,6 @@ function Index() {
         </section>
       </main>
       <Footer />
-      <a href="https://wa.me/5531997733217" className="sr-only">WhatsApp</a>
       <FloatingWhats />
     </>
   );
@@ -254,4 +253,3 @@ function FloatingWhats() {
   );
 }
 
-export { MessageCircle };
