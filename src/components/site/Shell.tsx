@@ -1,7 +1,7 @@
 import { useState, type ReactNode } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, MessageCircle, MapPin } from "lucide-react";
-import logo from "@/assets/logo.jpg.asset.json";
+import logo from "@/assets/logo.png.asset.json";
 import { ADDRESS, WHATSAPP_DISPLAY, WHATSAPP_URL } from "@/lib/site";
 
 export const NAV = [
@@ -41,7 +41,7 @@ export function WhatsButton({
 }
 
 export function Logo({ className = "h-12" }: { className?: string }) {
-  return <img src={logo.url} alt="duo life Studio" className={`${className} w-auto mix-blend-multiply`} />;
+  return <img src={logo.url} alt="duo life Studio" className={`${className} w-auto`} />;
 }
 
 export function Header() {
