@@ -202,8 +202,8 @@ function Index() {
             <Eyebrow>Nossa estrutura</Eyebrow>
             <h2 className="mt-4 max-w-xl text-3xl font-semibold text-navy sm:text-4xl">Conheça o espaço antes de nos visitar.</h2>
             <div className="mt-12 grid gap-4 md:grid-cols-3 md:grid-rows-2">
-              <img src={salaReformer.url} alt="Visão geral do estúdio com reformer, esteira e espaldar" loading="lazy" className="aspect-[4/5] h-full w-full rounded-[1.75rem] object-cover object-[50%_65%] md:col-span-2 md:row-span-2 md:aspect-auto" />
-              <img src={espaldar.url} alt="Espaldar com bolas, faixas elásticas e acessórios de treino" loading="lazy" className="aspect-square w-full rounded-[1.75rem] object-cover object-[30%_45%]" />
+              <img src={salaReformer.url} alt="Visão geral do estúdio com reformer, esteira e espaldar" loading="lazy" className="aspect-[4/5] w-full rounded-[1.75rem] object-cover object-[50%_70%] md:col-span-2 md:row-span-2 md:aspect-[4/3]" />
+              <img src={espaldar.url} alt="Espaldar com bolas, faixas elásticas e acessórios de treino" loading="lazy" className="aspect-square h-full w-full rounded-[1.75rem] object-cover object-[30%_45%] md:aspect-auto" />
               <div className="flex flex-col justify-between rounded-[1.75rem] bg-primary p-7 text-primary-foreground">
                 <p className="text-lg font-medium leading-snug">Aparelhos de Pilates, ambiente iluminado e um espaço pensado para o movimento.</p>
                 <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline">
