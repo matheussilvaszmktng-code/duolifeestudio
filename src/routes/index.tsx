@@ -3,9 +3,12 @@ import { MapPin, Activity, HeartPulse, ChevronDown } from "lucide-react";
 import { Header, Footer, WhatsButton } from "@/components/site/Shell";
 import { ADDRESS, MAPS_URL } from "@/lib/site";
 import equipe from "@/assets/equipe.jpg.asset.json";
-import estudio from "@/assets/estudio.jpg.asset.json";
 import fisio from "@/assets/fisio.jpg.asset.json";
-import cuidado from "@/assets/pilates.jpg.asset.json";
+import salaPrincipal from "@/assets/sala-principal.jpg.asset.json";
+import salaReformer from "@/assets/sala-reformer.jpg.asset.json";
+import paredeLogo from "@/assets/parede-logo.jpg.asset.json";
+import aparelhos from "@/assets/aparelhos.jpg.asset.json";
+import espaldar from "@/assets/espaldar.jpg.asset.json";
 
 const TITLE = "duo life Studio — Fisioterapia e Pilates em Caeté/MG";
 const DESC =
@@ -96,7 +99,7 @@ function Index() {
               </div>
             </div>
             <div className="relative animate-rise [animation-delay:150ms]">
-              <img src={estudio.url} alt="Sala de Pilates da duo life Studio com aparelhos" className="aspect-[4/5] w-full rounded-[2rem] object-cover shadow-soft" />
+              <img src={salaPrincipal.url} alt="Sala de Pilates da duo life Studio com aparelhos e o letreiro da marca" fetchPriority="high" className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[50%_60%] shadow-soft" />
               <div className="absolute -bottom-5 left-5 right-5 flex items-center gap-3 rounded-2xl bg-background p-4 shadow-soft sm:left-auto sm:w-72">
                 <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-secondary text-primary"><MapPin className="h-5 w-5" /></span>
                 <p className="min-w-0 text-sm"><span className="font-semibold">Vila das Flores</span><br /><span className="text-muted-foreground">Caeté — MG</span></p>
@@ -107,7 +110,7 @@ function Index() {
 
         {/* Sobre */}
         <section id="sobre" className="mx-auto grid max-w-6xl items-center gap-12 px-5 py-20 md:grid-cols-2 md:py-28">
-          <img src={cuidado.url} alt="Atendimento de fisioterapia no joelho" loading="lazy" className="aspect-[4/5] w-full rounded-[2rem] object-cover md:order-none" />
+          <img src={paredeLogo.url} alt="Parede do estúdio com o letreiro da duo life Studio" loading="lazy" className="aspect-[4/5] w-full rounded-[2rem] object-cover object-[50%_40%] md:order-none" />
           <div>
             <Eyebrow>Sobre nós</Eyebrow>
             <h2 className="mt-4 text-3xl font-semibold text-navy sm:text-4xl">Um espaço dedicado ao movimento e ao cuidado.</h2>
@@ -133,7 +136,7 @@ function Index() {
             <div className="mt-12 grid gap-6 md:grid-cols-2">
               {[
                 { t: "Fisioterapia", d: "Cuidado voltado ao corpo e ao movimento, com atenção às necessidades de cada pessoa.", img: fisio.url, Icon: HeartPulse, alt: "Sessão de fisioterapia com alongamento de perna" },
-                { t: "Pilates", d: "Exercícios em aparelhos para trabalhar o movimento de forma orientada, em um estúdio equipado.", img: estudio.url, Icon: Activity, alt: "Aparelhos de Pilates da duo life Studio" },
+                { t: "Pilates", d: "Exercícios em aparelhos para trabalhar o movimento de forma orientada, em um estúdio equipado.", img: aparelhos.url, Icon: Activity, alt: "Aparelhos de Pilates da duo life Studio" },
               ].map(({ t, d, img, Icon, alt }) => (
                 <article key={t} className="overflow-hidden rounded-[1.75rem] bg-card shadow-soft">
                   <img src={img} alt={alt} loading="lazy" className="aspect-[16/10] w-full object-cover" />
@@ -198,9 +201,9 @@ function Index() {
           <div className="mx-auto max-w-6xl px-5">
             <Eyebrow>Nossa estrutura</Eyebrow>
             <h2 className="mt-4 max-w-xl text-3xl font-semibold text-navy sm:text-4xl">Conheça o espaço antes de nos visitar.</h2>
-            <div className="mt-12 grid gap-4 md:grid-cols-3 md:grid-rows-2">
-              <img src={estudio.url} alt="Visão geral do estúdio com aparelhos de Pilates" loading="lazy" className="h-full min-h-80 w-full rounded-[1.75rem] object-cover md:col-span-2 md:row-span-2" />
-              <img src={equipe.url} alt="Ambiente do estúdio com o letreiro da duo life Studio" loading="lazy" className="aspect-square w-full rounded-[1.75rem] object-cover object-top" />
+            <div className="mt-12 grid gap-4 md:grid-cols-3 md:grid-rows-[17rem_17rem]">
+              <img src={salaReformer.url} alt="Visão geral do estúdio com reformer, esteira e espaldar" loading="lazy" className="aspect-[4/5] w-full rounded-[1.75rem] object-cover object-[50%_58%] md:col-span-2 md:row-span-2 md:h-full md:aspect-auto" />
+              <img src={espaldar.url} alt="Espaldar com bolas, faixas elásticas e acessórios de treino" loading="lazy" className="aspect-square h-full w-full rounded-[1.75rem] object-cover object-[30%_45%] md:aspect-auto" />
               <div className="flex flex-col justify-between rounded-[1.75rem] bg-primary p-7 text-primary-foreground">
                 <p className="text-lg font-medium leading-snug">Aparelhos de Pilates, ambiente iluminado e um espaço pensado para o movimento.</p>
                 <a href={MAPS_URL} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold underline-offset-4 hover:underline">
