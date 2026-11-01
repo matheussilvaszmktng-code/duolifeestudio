@@ -1,5 +1,7 @@
 # Correção de imagens para hospedagem externa
 
-- [ ] Recuperar todos os arquivos originais em public/images.
-- [ ] Atualizar referências sem alterações visuais e verificar outros caminhos internos.
-- [ ] Validar arquivos, carregamento e preservação visual.
+- [x] Recuperar todos os 10 arquivos originais em public/images, com bytes preservados.
+- [x] Atualizar todas as referências utilizadas; os JSON antigos permanecem apenas como registro sem uso.
+- [x] Validar 11 testes, todas as imagens locais e aparência idêntica em computador e celular, bloqueando URLs internas.
+
+Validação da publicação real na Vercel não realizada: não foi fornecido acesso ou endereço dessa publicação.
