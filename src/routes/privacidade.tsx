@@ -9,6 +9,8 @@ export const Route = createFileRoute("/privacidade")({
       { name: "description", content: "Como a duo life Studio trata informações de visitantes do site." },
       { property: "og:title", content: "Política de privacidade — duo life Studio" },
       { property: "og:description", content: "Como a duo life Studio trata informações de visitantes do site." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Privacy,
